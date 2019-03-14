@@ -7,12 +7,11 @@
 //
 
 import CoreData
-import UIKit
+import WebKit
 
 class DetailVC: UIViewController {
     
-    @IBOutlet weak var webView: UIWebView!
-    
+    var webView: WKWebView!
     var article: Article?
     var articleUrlString: String?
     
@@ -20,11 +19,17 @@ class DetailVC: UIViewController {
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     //MARK: View Life Cycle
+    override func loadView() {
+        super.loadView()
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addToFavorite)), animated: true)
-        webView.delegate = self
         
         configureWebView()
     }
@@ -59,8 +64,7 @@ class DetailVC: UIViewController {
     
     private func loadAddress(_ urlString: String) {
         let url = URL(string: urlString)
-        let request = URLRequest(url: url!)
-        webView.loadRequest(request)
+        webView.load(URLRequest(url: url!))
     }
     
     private func configureWebView() {
@@ -72,6 +76,6 @@ class DetailVC: UIViewController {
     }
 }
 
-extension DetailVC: UIWebViewDelegate {
+extension DetailVC: WKNavigationDelegate {
 
 }
