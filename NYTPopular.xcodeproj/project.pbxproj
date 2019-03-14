@@ -10,7 +10,6 @@
 		0B2063E921DBF018A1FC6F45 /* Pods_NYTPopular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBBB8F50767A9CC145C9A89 /* Pods_NYTPopular.framework */; };
 		320CAAA52239499B00B29041 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CAAA32239499B00B29041 /* ArticleTableViewCell.swift */; };
 		320CAAA62239499B00B29041 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 320CAAA42239499B00B29041 /* ArticleTableViewCell.xib */; };
-		320CAAA92239539300B29041 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CAAA82239539300B29041 /* ProgressHUD.swift */; };
 		320CAAAC2239578D00B29041 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CAAAB2239578D00B29041 /* DetailVC.swift */; };
 		320D5330223906EB002DB3E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D532F223906EB002DB3E9 /* AppDelegate.swift */; };
 		320D5335223906EB002DB3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320D5333223906EB002DB3E9 /* Main.storyboard */; };
@@ -30,7 +29,6 @@
 		01E97FABD3815BD9AC8E36A8 /* Pods-NYTPopular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTPopular.debug.xcconfig"; path = "Target Support Files/Pods-NYTPopular/Pods-NYTPopular.debug.xcconfig"; sourceTree = "<group>"; };
 		320CAAA32239499B00B29041 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		320CAAA42239499B00B29041 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
-		320CAAA82239539300B29041 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		320CAAAB2239578D00B29041 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		320D532C223906EB002DB3E9 /* NYTPopular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTPopular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		320D532F223906EB002DB3E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,13 +60,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		320CAAA12239492400B29041 /* Views */ = {
+		320CAAA12239492400B29041 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				320CAAA72239538200B29041 /* ProgressHUD */,
 				320CAAA22239493E00B29041 /* ArticleCell */,
 			);
-			path = Views;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		320CAAA22239493E00B29041 /* ArticleCell */ = {
@@ -78,14 +75,6 @@
 				320CAAA42239499B00B29041 /* ArticleTableViewCell.xib */,
 			);
 			path = ArticleCell;
-			sourceTree = "<group>";
-		};
-		320CAAA72239538200B29041 /* ProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				320CAAA82239539300B29041 /* ProgressHUD.swift */,
-			);
-			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
 		320CAAAA2239573A00B29041 /* DetailVC */ = {
@@ -117,7 +106,7 @@
 		320D532E223906EB002DB3E9 /* NYTPopular */ = {
 			isa = PBXGroup;
 			children = (
-				320CAAA12239492400B29041 /* Views */,
+				320CAAA12239492400B29041 /* Cells */,
 				320D535B22391319002DB3E9 /* Models */,
 				320D53572239125D002DB3E9 /* Managers */,
 				320D53442239083C002DB3E9 /* ViewControllers */,
@@ -367,7 +356,6 @@
 				320D535F22391376002DB3E9 /* Article.swift in Sources */,
 				320D534B22390C10002DB3E9 /* FavoriteArticleListVC.swift in Sources */,
 				320D535122390C8A002DB3E9 /* SharedArticleListVC.swift in Sources */,
-				320CAAA92239539300B29041 /* ProgressHUD.swift in Sources */,
 				32291A2B223A4992006878D7 /* ShortDetailVC.swift in Sources */,
 				320D534E22390C33002DB3E9 /* ViewedArticleListVC.swift in Sources */,
 			);

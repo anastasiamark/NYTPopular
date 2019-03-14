@@ -18,28 +18,29 @@ class SharedArticleListVC: UIViewController {
     
     private let articleCellReuseIdentifier = String(describing: ArticleTableViewCell.self)
 
+    //MARK: View Life Cycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        fetchArticles()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: articleCellReuseIdentifier, bundle: nil), forCellReuseIdentifier: articleCellReuseIdentifier)
+    }
+    
+    //MARK: Private Functions
+    private func fetchArticles() {
         
-        
-        let progressHUD = ProgressHUD(text: "Loading")
-        tableView.addSubview(progressHUD)
-
-        
-        networkManager.fetchSharedArticles(success: { articles in
-            
+        networkManager.fetchSharedArticles(success: {[weak self] articles in
             if let articles = articles {
-                self.articles = articles
+                self!.articles = articles
             }
-            
             DispatchQueue.main.async {
-                self.tableView.reloadData()
-                progressHUD.removeFromSuperview()
+                self!.tableView.reloadData()
             }
-            
         }) { responseStatusCode in
             if let statusCode = responseStatusCode {
                 print(statusCode)

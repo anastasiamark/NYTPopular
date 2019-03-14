@@ -19,27 +19,30 @@ class EmailedArticleListVC: UIViewController {
     private let articleCellReuseIdentifier = String(describing: ArticleTableViewCell.self)
     
     //MARK: View Life Cycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        fetchArticles()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: articleCellReuseIdentifier, bundle: nil), forCellReuseIdentifier: articleCellReuseIdentifier)
-        
-        
-        let progressHUD = ProgressHUD(text: "Loading")
-        tableView.addSubview(progressHUD)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
 
+    }
+    
+    //MARK: Private Functions
+    private func fetchArticles() {
         
-        self.networkManager.fetchEmailedArticles(success: { articles in
+        self.networkManager.fetchEmailedArticles(success: {[weak self] articles in
             if let articles = articles {
-                self.articles = articles
+                self!.articles = articles
             }
-            
             DispatchQueue.main.async {
-                self.tableView.reloadData()
-                progressHUD.removeFromSuperview()
+                self!.tableView.reloadData()
             }
-            
-            
         }) { responseStatusCode in
             if let statusCode = responseStatusCode {
                 print(statusCode)

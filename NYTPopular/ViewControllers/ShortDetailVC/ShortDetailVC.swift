@@ -15,6 +15,11 @@ class ShortDetailVC: UIViewController {
     @IBOutlet weak var abstractTextView: UITextView!
     @IBOutlet weak var authorTextView: UITextView!
     
+    var articleTitle = ""
+    var articleAbstract = ""
+    var articleAuthor = ""
+    
+    //MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +29,9 @@ class ShortDetailVC: UIViewController {
     //MARK: Private Functions
     private func configureVC() {
         guard let article = article else {
+            titleTextView.text = articleTitle
+            abstractTextView.text = articleAbstract
+            authorTextView.text = articleAuthor
             return
         }
         titleTextView.text = article.title
