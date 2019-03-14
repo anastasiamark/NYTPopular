@@ -8,24 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		0B2063E921DBF018A1FC6F45 /* Pods_NYTPopular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBBB8F50767A9CC145C9A89 /* Pods_NYTPopular.framework */; };
+		320CAAA52239499B00B29041 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CAAA32239499B00B29041 /* ArticleTableViewCell.swift */; };
+		320CAAA62239499B00B29041 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 320CAAA42239499B00B29041 /* ArticleTableViewCell.xib */; };
+		320CAAA92239539300B29041 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CAAA82239539300B29041 /* ProgressHUD.swift */; };
+		320CAAAC2239578D00B29041 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320CAAAB2239578D00B29041 /* DetailVC.swift */; };
 		320D5330223906EB002DB3E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D532F223906EB002DB3E9 /* AppDelegate.swift */; };
-		320D5332223906EB002DB3E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D5331223906EB002DB3E9 /* ViewController.swift */; };
 		320D5335223906EB002DB3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320D5333223906EB002DB3E9 /* Main.storyboard */; };
 		320D5338223906EB002DB3E9 /* NYTPopular.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 320D5336223906EB002DB3E9 /* NYTPopular.xcdatamodeld */; };
 		320D533A223906ED002DB3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320D5339223906ED002DB3E9 /* Assets.xcassets */; };
 		320D533D223906ED002DB3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320D533B223906ED002DB3E9 /* LaunchScreen.storyboard */; };
+		320D534B22390C10002DB3E9 /* FavoriteArticleListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D534A22390C10002DB3E9 /* FavoriteArticleListVC.swift */; };
+		320D534E22390C33002DB3E9 /* ViewedArticleListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D534D22390C33002DB3E9 /* ViewedArticleListVC.swift */; };
+		320D535122390C8A002DB3E9 /* SharedArticleListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D535022390C8A002DB3E9 /* SharedArticleListVC.swift */; };
+		320D535422390CBF002DB3E9 /* EmailedArticleListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D535322390CBF002DB3E9 /* EmailedArticleListVC.swift */; };
+		320D535A22391291002DB3E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D535922391291002DB3E9 /* NetworkManager.swift */; };
+		320D535F22391376002DB3E9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320D535E22391376002DB3E9 /* Article.swift */; };
+		32291A2B223A4992006878D7 /* ShortDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32291A2A223A4992006878D7 /* ShortDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01E97FABD3815BD9AC8E36A8 /* Pods-NYTPopular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTPopular.debug.xcconfig"; path = "Target Support Files/Pods-NYTPopular/Pods-NYTPopular.debug.xcconfig"; sourceTree = "<group>"; };
+		320CAAA32239499B00B29041 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		320CAAA42239499B00B29041 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		320CAAA82239539300B29041 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		320CAAAB2239578D00B29041 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		320D532C223906EB002DB3E9 /* NYTPopular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTPopular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		320D532F223906EB002DB3E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		320D5331223906EB002DB3E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		320D5334223906EB002DB3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		320D5337223906EB002DB3E9 /* NYTPopular.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NYTPopular.xcdatamodel; sourceTree = "<group>"; };
 		320D5339223906ED002DB3E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		320D533C223906ED002DB3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320D533E223906ED002DB3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320D534A22390C10002DB3E9 /* FavoriteArticleListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteArticleListVC.swift; sourceTree = "<group>"; };
+		320D534D22390C33002DB3E9 /* ViewedArticleListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedArticleListVC.swift; sourceTree = "<group>"; };
+		320D535022390C8A002DB3E9 /* SharedArticleListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedArticleListVC.swift; sourceTree = "<group>"; };
+		320D535322390CBF002DB3E9 /* EmailedArticleListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailedArticleListVC.swift; sourceTree = "<group>"; };
+		320D535922391291002DB3E9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		320D535E22391376002DB3E9 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		32291A2A223A4992006878D7 /* ShortDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortDetailVC.swift; sourceTree = "<group>"; };
 		8A1B1F95424B3220E106D54F /* Pods-NYTPopular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTPopular.release.xcconfig"; path = "Target Support Files/Pods-NYTPopular/Pods-NYTPopular.release.xcconfig"; sourceTree = "<group>"; };
 		9DBBB8F50767A9CC145C9A89 /* Pods_NYTPopular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTPopular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,6 +62,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		320CAAA12239492400B29041 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				320CAAA72239538200B29041 /* ProgressHUD */,
+				320CAAA22239493E00B29041 /* ArticleCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		320CAAA22239493E00B29041 /* ArticleCell */ = {
+			isa = PBXGroup;
+			children = (
+				320CAAA32239499B00B29041 /* ArticleTableViewCell.swift */,
+				320CAAA42239499B00B29041 /* ArticleTableViewCell.xib */,
+			);
+			path = ArticleCell;
+			sourceTree = "<group>";
+		};
+		320CAAA72239538200B29041 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				320CAAA82239539300B29041 /* ProgressHUD.swift */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		320CAAAA2239573A00B29041 /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				320CAAAB2239578D00B29041 /* DetailVC.swift */,
+			);
+			path = DetailVC;
+			sourceTree = "<group>";
+		};
 		320D5323223906EB002DB3E9 = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +117,11 @@
 		320D532E223906EB002DB3E9 /* NYTPopular */ = {
 			isa = PBXGroup;
 			children = (
+				320CAAA12239492400B29041 /* Views */,
+				320D535B22391319002DB3E9 /* Models */,
+				320D53572239125D002DB3E9 /* Managers */,
 				320D53442239083C002DB3E9 /* ViewControllers */,
 				320D532F223906EB002DB3E9 /* AppDelegate.swift */,
-				320D5331223906EB002DB3E9 /* ViewController.swift */,
 				320D5333223906EB002DB3E9 /* Main.storyboard */,
 				320D5339223906ED002DB3E9 /* Assets.xcassets */,
 				320D533B223906ED002DB3E9 /* LaunchScreen.storyboard */,
@@ -78,8 +134,86 @@
 		320D53442239083C002DB3E9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				32291A29223A48A1006878D7 /* ShortDetailVC */,
+				320CAAAA2239573A00B29041 /* DetailVC */,
+				320D535222390CAF002DB3E9 /* EmailedArticleListVC */,
+				320D534F22390C7F002DB3E9 /* SharedArticleListVC */,
+				320D534C22390C27002DB3E9 /* ViewedArticleListVC */,
+				320D534922390C01002DB3E9 /* FavoriteArticleListVC */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		320D534922390C01002DB3E9 /* FavoriteArticleListVC */ = {
+			isa = PBXGroup;
+			children = (
+				320D534A22390C10002DB3E9 /* FavoriteArticleListVC.swift */,
+			);
+			path = FavoriteArticleListVC;
+			sourceTree = "<group>";
+		};
+		320D534C22390C27002DB3E9 /* ViewedArticleListVC */ = {
+			isa = PBXGroup;
+			children = (
+				320D534D22390C33002DB3E9 /* ViewedArticleListVC.swift */,
+			);
+			path = ViewedArticleListVC;
+			sourceTree = "<group>";
+		};
+		320D534F22390C7F002DB3E9 /* SharedArticleListVC */ = {
+			isa = PBXGroup;
+			children = (
+				320D535022390C8A002DB3E9 /* SharedArticleListVC.swift */,
+			);
+			path = SharedArticleListVC;
+			sourceTree = "<group>";
+		};
+		320D535222390CAF002DB3E9 /* EmailedArticleListVC */ = {
+			isa = PBXGroup;
+			children = (
+				320D535322390CBF002DB3E9 /* EmailedArticleListVC.swift */,
+			);
+			path = EmailedArticleListVC;
+			sourceTree = "<group>";
+		};
+		320D53572239125D002DB3E9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				320D53582239126F002DB3E9 /* NetworkManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		320D53582239126F002DB3E9 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				320D535922391291002DB3E9 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		320D535B22391319002DB3E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				320D535C22391350002DB3E9 /* Article */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		320D535C22391350002DB3E9 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				320D535E22391376002DB3E9 /* Article.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		32291A29223A48A1006878D7 /* ShortDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				32291A2A223A4992006878D7 /* ShortDetailVC.swift */,
+			);
+			path = ShortDetailVC;
 			sourceTree = "<group>";
 		};
 		7F324D2D823E0F5198E697FE /* Frameworks */ = {
@@ -96,7 +230,6 @@
 				01E97FABD3815BD9AC8E36A8 /* Pods-NYTPopular.debug.xcconfig */,
 				8A1B1F95424B3220E106D54F /* Pods-NYTPopular.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320CAAA62239499B00B29041 /* ArticleTableViewCell.xib in Resources */,
 				320D533D223906ED002DB3E9 /* LaunchScreen.storyboard in Resources */,
 				320D533A223906ED002DB3E9 /* Assets.xcassets in Resources */,
 				320D5335223906EB002DB3E9 /* Main.storyboard in Resources */,
@@ -179,12 +313,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NYTPopular/Pods-NYTPopular-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -220,9 +358,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320D5332223906EB002DB3E9 /* ViewController.swift in Sources */,
+				320CAAAC2239578D00B29041 /* DetailVC.swift in Sources */,
 				320D5338223906EB002DB3E9 /* NYTPopular.xcdatamodeld in Sources */,
+				320CAAA52239499B00B29041 /* ArticleTableViewCell.swift in Sources */,
 				320D5330223906EB002DB3E9 /* AppDelegate.swift in Sources */,
+				320D535422390CBF002DB3E9 /* EmailedArticleListVC.swift in Sources */,
+				320D535A22391291002DB3E9 /* NetworkManager.swift in Sources */,
+				320D535F22391376002DB3E9 /* Article.swift in Sources */,
+				320D534B22390C10002DB3E9 /* FavoriteArticleListVC.swift in Sources */,
+				320D535122390C8A002DB3E9 /* SharedArticleListVC.swift in Sources */,
+				320CAAA92239539300B29041 /* ProgressHUD.swift in Sources */,
+				32291A2B223A4992006878D7 /* ShortDetailVC.swift in Sources */,
+				320D534E22390C33002DB3E9 /* ViewedArticleListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +517,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RCRK7A4747;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NYTPopular/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,8 +538,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RCRK7A4747;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NYTPopular/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

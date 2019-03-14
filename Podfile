@@ -6,6 +6,7 @@ target 'NYTPopular' do
   use_frameworks!
 
   # Pods for NYTPopular
-pod 'Alamofire', '~> 5.0.0-beta.3'
+pod 'Alamofire', '~> 4.7'
+pod 'AlamofireObjectMapper', '~> 5.2'
 
 end
